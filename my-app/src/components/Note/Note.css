@@ -1,0 +1,52 @@
+.note{
+    background-color: #001f3f;
+    margin: 1em;
+    width: 16em;
+    height: 16em;
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #111;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    flex-direction: column;
+    transform: rotate(-6deg);
+    z-index: 1;
+
+    transition: all ease 0.3s;
+}
+.note:nth-child(even)
+{
+    background-color: #FFDC00 ;
+    transform: rotate(4deg);
+    position: relative;
+    top: 5px;
+}
+
+.note:nth-child(3n)
+{
+    background-color: #B10DC9;
+    transform: rotate(-3deg);
+    position: relative;
+    top: -5px;
+}
+
+.note:hover{
+  transform: scale(1.4);
+  z-index: 5;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px,
+   rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.note__text{
+    padding-top: 1rem;
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.note__link a{
+    text-decoration: none;
+    display: none;
+}
